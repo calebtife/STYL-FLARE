@@ -29,3 +29,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.bokor-font {
+    font-family: 'Bokor', cursive;
+    font-weight: 700;
+    font-style: normal;
+}
