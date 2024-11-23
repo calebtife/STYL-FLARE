@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYL FLARE</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="sidebar-container flex justify-center">
+            <div class="sidebar hidden  left-0 w-[90%] h-auto bg-[#FF5733] text-white flex-col items-center justify-center gap-5 z-50 mt-[120px] rounded-2xl">
+                <div class="close-sidebar  font-bold ml-auto">
+                    <i class='bx bx-x bx-lg' onclick=hideSidebar()></i>
+                </div>
+                <ul class="flex flex-col gap-5 text-white p-5 text-2xl">
+                    <li><a href="#" class="hover:text-black nav-link relative">Home</a></li>
+                    <li><a href="#" class="hover:text-black nav-link relative">Booking</a></li>
+                    <li><a href="#" class="hover:text-black nav-link relative">Services</a></li>
+                    <li><a href="#" class="hover:text-black nav-link relative">Gallery</a></li>
+                    <li><a href="#" class="hover:text-black nav-link relative">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="flex  justify-between items-center px-10 py-3 rounded-b-3xl fixed top-0 w-full z-10 shadow-lg">
+            <div class="logo">
+                <img src="../assets/logo.png" class="w-[80px] h-[80px]" alt="logo">
+            </div>
+            <ul class="hidden sm:flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger sm:hidden" onclick=showSidebar()>
+                <i class='bx bx-menu-alt-right bx-lg text-[#FF5733]'></i>
+              </div>
+        </nav>
+    </header>
+
+    <section class="hero pt-[108px]">
+        <div class="hero-content p-4">
+            <h1 class="text-4xl font-bold text-center text-white">Transform Your Look <span class="text-[#FF5733]">with Stylish Flare</span></h1>
+            <p class="text-center text-[18px] mt-3 text-white">Experience the perfect blend of style and expertise. Our award-winning salon offers cuting-edge hair services tailored to your unique personality.</p>
+
+            <div class="flex justify-center gap-4 mt-5">
+                <a href="#" class="bg-[#FF5733] text-white px-4 py-2 rounded-md"><i class='bx bxs-calendar mr-1'></i>Book Appointment</a>
+                <a href="#" class="bg-white text-[#FF5733] px-4 py-2 rounded-md outline outline-1 outline-[#FF5733]">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery p-5">
+        <div class="gallery-content h-[400px]">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="../assets/image-1.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-2.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-3.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-4.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-6.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-7.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-8.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  <div class="swiper-slide"><img src="../assets/image-9.jpg" alt="" class="object-cover rounded-[24px] w-[500px] h-[400px]"></div>
+                  ...
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content p-4 bg-[#FF5733] flex flex-col md:flex-row gap-4">
+            <div>
+                <div class="footer-logo flex justify-center items-center gap-2">
+                    <img src="../assets/logo.png" class="w-[80px] h-[80px]" alt="logo">
+                    <h2 class="text-2xl font-bold text-center">Styl Flare - Where <span class="text-white">Style</span> Meets <span class="text-white">Flair</span></h2>
+                </div>
+                <p class="text-[0.6rem] md:text-[1rem] mb-2">Transform your look effortlessly with our expert hair styling services. At Styl Flare, we blend creativity and precision to bring out your best self. Connect with us today and let your hair shine as bright as your personality!</p>
+                <div class="footer-links flex flex-col justify-center items-start gap-4">
+                    <div class="flex justify-center items-center gap-2">
+                        <i class='bx bx-phone-incoming bx-md' ></i>
+                        <a href="#">+44 7481 234567</a>
+                    </div>
+                    <div class="flex justify-center items-center gap-2">
+                        <i class='bx bxs-map-pin bx-md' ></i>
+                        <p>Norwich, United Kingdom</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-2">
+                        <i class='bx bx-mail-send bx-md' ></i>
+                        <a href="#">info@stylflare.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-links flex flex-col justify-center items-start gap-2">
+                <h2 class="text-2xl font-bold text-center">Quick Links</h2>
+                <ul class="flex flex-col justify-center items-start gap-2">
+                    <li><a href="#" class="hover:underline ">Home</a></li>
+                    <li><a href="#" class="hover:underline ">Booking</a></li>
+                    <li><a href="#" class="hover:underline ">Services</a></li>
+                    <li><a href="#" class="hover:underline ">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="social-links flex flex-col justify-center items-start gap-2">
+                <h2 class="text-2xl font-bold text-center">We are Social</h2>
+                <a href="#" class="hover:underline ">Instagram</a>
+                <a href="#" class="hover:underline ">Facebook</a>
+                <a href="#" class="hover:underline ">Twitter</a>
+            </div>
+            
+        </div>
+        <div class="footer-copyright text-center text-white bg-black py-2">
+            <p>&copy; 2024 Styl Flare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000, // Delay in milliseconds (3 seconds)
+                disableOnInteraction: false, // Continue autoplay after user interactions
+            },
+            loop: true, // Enable looping
+            slidesPerView: 1, // Adjust this depending on your layout
+            spaceBetween: 10, // Space between slides in px
+            effect: 'coverflow',
+        });
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+</html>
